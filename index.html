@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://www.escolagenebra.com.br/img/favicon/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://www.escolagenebra.com.br/img/favicon/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.escolagenebra.com.br/img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.escolagenebra.com.br/img/favicon/favicon-16x16.png">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>39</h1>
+    <script src="script.js"></script>
+
+    <label for="nomes">Selecione um nome:</label>
+    <select id="selectNomes"></select>
+
+    <script>
+        // Array com os nomes
+        const nomes = ['Cleiton', 'Jonas', 'Nana', 'Laurinha', 'Débora'];
+
+        // Seleciona o elemento <select> no DOM
+        const selectElement = document.getElementById('selectNomes');
+
+        // Percorre o array e adiciona os nomes como opções no select
+        nomes.forEach(function(nome) {
+            // Cria um elemento <option>
+            const option = document.createElement('option');
+            option.value = nome; // Define o valor do <option>
+            option.textContent = nome; // Define o texto visível do <option>
+
+            // Adiciona a <option> dentro do <select>
+            selectElement.appendChild(option);
+        });
+    </script>
+
+</body>
+</html>
